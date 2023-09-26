@@ -1,0 +1,114 @@
+
+.titulo {
+    text-align: center;
+    border-style: solid;
+    border-color: gray;
+}
+
+.contenido{
+    display: flex;
+}
+
+.indice {
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-style: solid;
+    border-color: darkblue
+
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo{
+    width: 60rem;
+    height: 10rem;
+    padding: 1rem;
+    border-style: inset;
+    border-color: blue;
+}
+
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+} 
+
+.publicacion {
+    justify-content: center;
+    width: 10rem;
+    background-color: lightcyan;
+    margin: 1rem;
+    border-style: solid;
+    border-color: black;   
+}
+
+.foto{
+    width: 6rem;
+    justify-content: center;
+    align-content: center;
+}
+
+@media(max-width:600px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+}
+}
+
+@media(max-width:400px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+.caja{
+    display: block;
+    width: 10rem;
+    height: 1rem;
+    padding-bottom: 10rem;
+    border-radius: 100%;
+    box-shadow: 2rem -1rem gray;
+    animation-name: prueba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes prueba {
+    0%{background-color: yellow;}
+    50%{background-color: blue;}
+    100%{background-color: red;}
+}
+
+
+.boton{
+    height: 5rem;
+    width: 10rem;
+    margin: 10rem;
+    font-size: 1rem;
+}
+
+.boton:hover{
+    background-color: black;
+    color: white;
+    transition-property: font-size;
+    transition-duration: 3s;
+    font-size: 4rem;
+}
+
+.boton2{
+    transition: 2s;
+    animation-iteration-count: infinite;
+}
+.boton2:hover{
+    transform:rotatey(90deg);
+}
